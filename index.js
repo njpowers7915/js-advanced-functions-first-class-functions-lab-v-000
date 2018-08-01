@@ -18,10 +18,10 @@ const createFareMultiplier = function (integer) {
 const fareDoubler = createFareMultiplier(2);
 const fareTripler = createFareMultiplier(3);
 
-const selectDifferentDrivers = function (x) {
+const selectDifferentDrivers = function (drivers, x) {
   if (x === returnFirstTwoDrivers) {
-    return returnFirstTwoDrivers;
+    return returnFirstTwoDrivers(drivers);
   } else {
-    return returnLastTwoDrivers;
+    return returnLastTwoDrivers(drivers);
   };
 };
